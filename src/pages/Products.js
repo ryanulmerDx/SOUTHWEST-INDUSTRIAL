@@ -17,7 +17,6 @@ function Products() {
         "Linear Slides & Actuators",
         "Bearing Accessories & Tools"
       ],
-      brands: ["SKF", "Timken", "NTN", "FAG", "INA"]
     },
     {
       name: "Mechanical Power Transmission",
@@ -32,8 +31,7 @@ function Products() {
         "Gear Boxes & Speed Reducers",
         "Universal Joints",
         "Clutches & Brakes"
-      ],
-      brands: ["Baldor", "Browning", "Martin", "Dodge", "Lovejoy"]
+      ]
     },
     {
       name: "Conveyor Belting & Components",
@@ -48,8 +46,7 @@ function Products() {
         "Impact Idlers",
         "Conveyor Pulleys (Drive, Tail, Snub)",
         "Take-Up Frames & Counterweights"
-      ],
-      brands: ["Fenner", "Continental", "Goodyear", "Flexco"]
+      ]
     },
     {
       name: "Motors & Motor Controls",
@@ -64,8 +61,7 @@ function Products() {
         "Motor Starters & Contactors",
         "Brake Motors",
         "Explosion Proof Motors"
-      ],
-      brands: ["Baldor", "WEG", "Leeson", "ABB", "Siemens"]
+      ]
     },
     {
       name: "Hydraulic & Pneumatic",
@@ -80,8 +76,7 @@ function Products() {
         "Pneumatic Cylinders",
         "Air Regulators & Filters",
         "Quick Disconnects"
-      ],
-      brands: ["Parker", "Eaton", "Gates", "Continental"]
+      ]
     },
     {
       name: "Industrial MRO Supplies",
@@ -96,8 +91,7 @@ function Products() {
         "Gasket Material & Sheet Stock",
         "Rubber & Plastic Products",
         "Hand Tools & Power Tools"
-      ],
-      brands: ["3M", "Lincoln", "Bostik", "Garlock"]
+      ]
     }
   ];
 
@@ -130,11 +124,6 @@ function Products() {
                     <li key={i}>{item}</li>
                   ))}
                 </ul>
-                {category.brands && (
-                  <div style={{ marginTop: '12px', fontSize: '12px', color: 'var(--muted)' }}>
-                    <strong>Brands:</strong> {category.brands.join(', ')}
-                  </div>
-                )}
               </div>
             ))}
           </div>

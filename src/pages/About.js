@@ -71,67 +71,31 @@ function About() {
           <div className="products-grid" style={{ marginTop: '32px' }}>
             <div className="tile">
               <div className="tile-head">
-                <h3>Customer First</h3>
+                <h3>Serving Customers</h3>
                 <span className="chip">Core Value</span>
               </div>
               <p>
-                Every decision we make starts with one question: "How does this serve our customers better?" 
-                Your success is our success.
+                Every decision we make starts with one question: "How does this serve our customers better?" Working to find the best option for our customers is why we come to work every day. We want to take such good care of our customers that everything else takes care of itself.
               </p>
             </div>
 
             <div className="tile">
               <div className="tile-head">
-                <h3>Responsive Service</h3>
+                <h3>Peace of Mind</h3>
                 <span className="chip">Core Value</span>
               </div>
               <p>
-                We understand that time is money in industrial operations. Same-day quotes, quick turnarounds, 
-                and emergency availability are standard practice.
+                Our relations with each customer should make their life easier. Our best efforts are focused on solutions that will bring peace and confidence to our customers knowing we can deliver what they need, when they need it.
               </p>
             </div>
 
             <div className="tile">
               <div className="tile-head">
-                <h3>Quality & Reliability</h3>
+                <h3>Quality Commitment</h3>
                 <span className="chip">Core Value</span>
               </div>
               <p>
-                We only stock and source products from manufacturers we trust. If we wouldn't use it in our own 
-                operations, we won't sell it to you.
-              </p>
-            </div>
-
-            <div className="tile">
-              <div className="tile-head">
-                <h3>Knowledge & Expertise</h3>
-                <span className="chip">Core Value</span>
-              </div>
-              <p>
-                Over 25 years of experience means we've seen it all. We bring that knowledge to every customer 
-                interaction and product recommendation.
-              </p>
-            </div>
-
-            <div className="tile">
-              <div className="tile-head">
-                <h3>Relationships Matter</h3>
-                <span className="chip">Core Value</span>
-              </div>
-              <p>
-                We're not just a vendor — we're your partner. Many of our customer relationships span decades 
-                because we treat each one like it matters.
-              </p>
-            </div>
-
-            <div className="tile">
-              <div className="tile-head">
-                <h3>Community Commitment</h3>
-                <span className="chip">Core Value</span>
-              </div>
-              <p>
-                Northern Arizona is our home. We're invested in the success of local businesses and the 
-                communities we serve.
+                The way we serve and the products we offer go far beyond a single transaction. We want to be part of a community in which our team and products are proven and trusted.
               </p>
             </div>
           </div>
@@ -153,9 +117,7 @@ function About() {
                 <span className="chip">Founder & Owner</span>
               </div>
               <p>
-                Brent founded Southwest Industrial in 2000 with a vision to provide Northern Arizona with 
-                responsive, knowledgeable industrial supply service. With over 25 years in the industry, 
-                he brings deep expertise in sourcing, product knowledge, and building lasting customer relationships.
+                Brent founded Southwest Industrial in 2000 with a vision to provide responsive, knowledgeable industrial supply service. With over 40 years in the industry, he brings deep expertise in sourcing, product knowledge, and building lasting customer relationships.
               </p>
               <div style={{ marginTop: '12px' }}>
                 <a href="mailto:Brent@southwest-industrial.com" className="btn ghost" style={{ fontSize: '13px', padding: '10px 16px' }}>
@@ -167,7 +129,7 @@ function About() {
             <div className="tile">
               <div className="tile-head">
                 <h3>Caleb</h3>
-                <span className="chip">Team Member</span>
+                <span className="chip">Vice President & Owner</span>
               </div>
               <p>
                 Caleb brings technical expertise and customer service excellence to Southwest Industrial. 
