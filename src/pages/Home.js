@@ -35,6 +35,25 @@ function Home() {
         </div>
       </section>
 
+      {/* Hero Stats Bar */}
+      <div className="hero-bar">
+        <div className="container">
+          <div className="hero-bar-inner">
+            <div className="hero-bar-stat">
+              <strong>25+</strong> Years Serving Flagstaff
+            </div>
+            <div className="hero-bar-divider"></div>
+            <div className="hero-bar-stat">
+              <strong>1,000+</strong> Products in Stock
+            </div>
+            <div className="hero-bar-divider"></div>
+            <div className="hero-bar-stat">
+              <strong>Same Day</strong> Response
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Products */}
       <section id="products">
         <div className="container">
