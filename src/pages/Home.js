@@ -59,7 +59,7 @@ function Home() {
         <div className="container">
           <div className="section-head">
             <h2>Products</h2>
-            <p>A clean overview of the categories we support (simple demo layout).</p>
+            <p>A clean overview of the categories we support.</p>
           </div>
 
           <div className="products-grid">
