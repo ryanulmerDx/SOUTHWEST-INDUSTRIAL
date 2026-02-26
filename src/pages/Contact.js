@@ -11,6 +11,8 @@ function Contact() {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
   const handleChange = (e) => {
     setFormData({
@@ -19,24 +21,27 @@ function Contact() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // This would normally send to a backend/email service
-    console.log('Form submitted:', formData);
-    setSubmitted(true);
-    
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setSubmitted(false);
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        company: '',
-        subject: 'General Inquiry',
-        message: ''
+    setLoading(true);
+    setError('');
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
       });
-    }, 3000);
+
+      if (!res.ok) throw new Error('Failed to send');
+
+      setSubmitted(true);
+      setFormData({ name: '', email: '', phone: '', company: '', subject: 'General Inquiry', message: '' });
+    } catch (err) {
+      setError('Something went wrong. Please try calling or emailing us directly.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -225,17 +230,19 @@ function Contact() {
                 </div>
 
                 <div>
-                  <button type="submit" className="btn" style={{ width: '100%' }}>
-                    Send Message
+                  <button type="submit" className="btn" style={{ width: '100%' }} disabled={loading}>
+                    {loading ? 'Sending...' : 'Send Message'}
                   </button>
-                  <div style={{ 
-                    marginTop: '12px', 
-                    fontSize: '13px', 
-                    color: 'var(--muted)',
-                    textAlign: 'center'
-                  }}>
-                    We typically respond within one business day
-                  </div>
+                  {error && (
+                    <div style={{ marginTop: '12px', fontSize: '13px', color: 'var(--brand)', textAlign: 'center' }}>
+                      {error}
+                    </div>
+                  )}
+                  {!error && (
+                    <div style={{ marginTop: '12px', fontSize: '13px', color: 'var(--muted)', textAlign: 'center' }}>
+                      We typically respond within one business day
+                    </div>
+                  )}
                 </div>
               </form>
             )}
